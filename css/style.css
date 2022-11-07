@@ -1,0 +1,228 @@
+:root {
+/*fonts*/
+--main-font:"Roboto", Tahoma, sans-serif;
+--secondary-font:"Raleway", Tahoma, sans-serif;
+
+/* Text color*/
+--main-text-color: #212121;
+--secondary-text-color: #757575;
+--ligth-text-color: #FFFFFF;
+--accent-text-color:#2196f3;
+
+/* Background colors */
+--main-bg-color:#FFFFFF;
+--secondary-bg-color: #2F303A;
+--accent-bg-color:#2196F3;
+--button-bg-color:#F5F4FA;
+
+/* Others */
+--border-color:#FFFFFF;
+--nav-link-color:#000000;
+
+}
+
+body {
+    font-family: var(--main-font);
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+    letter-spacing: 0.03em;
+}
+.list {
+    list-style: none;
+}
+.link {
+text-decoration: none;
+}
+
+/*---- HEADER----*/
+
+.logo {
+
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    
+    color: var(--accent-text-color);
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: currentColor;
+}
+
+.nav-link:hover, .header-link:hover, .nav-link:focus, .header-link:focus {
+    color: var(--accent-text-color);
+}
+
+.link.current {
+    color: var(--accent-text-color);
+}
+.logo-header {
+    color: var(--nav-link-color);
+}
+
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+
+/*----HERO----*/
+
+.hero {
+    background-color: var(--secondary-bg-color);
+}
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ligth-text-color);
+}
+.hero-btn {
+    font-family: inherit;
+   
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: var(--ligth-text-color);
+    background-color: var(--accent-bg-color);
+}
+.hero-btn:hover, .hero-btn:focus {
+    border-color:var(--border-color);
+}
+
+/*----BENEFITS----*/
+
+.benefits-subtitle {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+}
+
+.benefits-text {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: var(--secondary-text-color);
+}
+
+/*----ACTIVITY----*/
+
+.activity-title {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+}
+
+/*----TEAM----*/
+
+.team {
+background-color: var(--button-bg-color);
+}
+
+.team-title {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+}
+
+.team-subtitle { 
+    font-weight: 500;
+    
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+}
+
+.team-text {
+    line-height: calc(19 / 16);
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+
+/*----FOOTER----*/
+
+.footer {
+    background-color: var(--secondary-bg-color);
+}
+.logo-footer {
+    color: var(--ligth-text-color);
+}
+
+.footer-link-adress {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: var(--ligth-text-color);
+}
+
+.footer-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-link:hover,
+.footer-link-adress:hover,
+.footer-link:focus,
+.footer-link-adress:focus {
+    color: var(--accent-text-color);
+}
+
+/*----PORTFOLIO----*/
+
+.portfolio-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    color: currentColor;
+    background-color: var(--button-bg-color);
+    border-style: none;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    color: var(--ligth-text-color);
+    background-color: var(--accent-bg-color);
+}
+.portfolio-subtitle {
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+    color: var(--main-text-color);
+}
+.portfolio-text {
+    line-height: calc(30 / 16);
+    color: var(--secondary-text-color);
+
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
